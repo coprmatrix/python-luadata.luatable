@@ -1,0 +1,19 @@
+<services>
+    <service name="obs_scm">
+        <param name="filename">luadata_luatable</param>
+        <param name="url">https://github.com/huakim/python-luadata.luatable.git</param>
+        <param name="scm">git</param>
+        <param name="revision">main</param>
+        <param name="changesgenerate">enable</param>
+        <param name="without-version">enable</param>
+    </service>
+    <service mode="buildtime" name="py_build">
+        <param name="noop">enable</param>
+    </service>
+    <service mode="buildtime" name="py2pack_generate">
+        <param name="noop">enable</param>
+    </service>
+    <service mode="buildtime" name="run">
+        <param name="sourcefile">main.sh</param>
+    </service>
+</services>
