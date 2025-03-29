@@ -16,4 +16,9 @@
     <service mode="buildtime" name="run">
         <param name="sourcefile">main.sh</param>
     </service>
+
+    <service name="perl_regex" mode="buildtime">
+        <param name="file">*.spec</param>
+        <param name="regexfile">reg.pl</param> 
+    </service>
 </services>
